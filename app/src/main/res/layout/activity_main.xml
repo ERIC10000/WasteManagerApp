@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".RegisterActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -59,93 +59,62 @@
             android:layout_marginTop="15dp"/>
 
         <EditText
-            android:id="@+id/emailLogin"
+            android:id="@+id/firstName"
             android:layout_width="0dp"
             android:layout_height="60dp"
             app:layout_constraintStart_toStartOf="@id/guidelineLeft"
             app:layout_constraintEnd_toEndOf="@id/guidelineRight"
             app:layout_constraintTop_toBottomOf="@id/Quality"
             style="@style/editText"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
+            android:hint="First Name"
             android:layout_marginTop="50dp"/>
 
+
+
         <EditText
-            android:id="@+id/passwordLogin"
+            android:id="@+id/lastName"
             android:layout_width="0dp"
             android:layout_height="60dp"
             app:layout_constraintStart_toStartOf="@id/guidelineLeft"
             app:layout_constraintEnd_toEndOf="@id/guidelineRight"
-            app:layout_constraintTop_toBottomOf="@id/emailLogin"
+            app:layout_constraintTop_toBottomOf="@id/firstName"
             style="@style/editText"
-            android:hint="Password"
+            android:hint="Last Name"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+            app:layout_constraintTop_toBottomOf="@id/lastName"
+            style="@style/editText"
+            android:hint="Email Address"
             android:inputType="textPassword"
             android:layout_marginTop="15dp"/>
 
 
-        <TextView
-            android:id="@+id/ForgotLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
-            app:layout_constraintTop_toBottomOf="@id/passwordLogin"
-            android:textAlignment="center"
-            style="@style/h2"
-            android:gravity="center"
-            android:text="Forgot Password?"
-            android:layout_marginTop="15dp"
-            android:textColor="@color/black"/>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_login"
-            android:layout_width="0dp"
-            android:layout_height="55dp"
-            style="@style/blueButtonStyle"
-            android:fontFamily="@font/poppins_thin"
-            android:text="Register"
-            android:layout_marginTop="15dp"
-            android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
-            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
-            app:layout_constraintTop_toBottomOf="@id/ForgotLogin" />
-
-
         <ImageView
-            android:id="@+id/facebookLogin"
+            android:id="@+id/textIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="13dp"
-            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
-            app:layout_constraintTop_toBottomOf="@id/btn_login"
-            android:src="@drawable/facebook_login"/>
+            android:src="@drawable/arrow_right"
+            android:paddingEnd="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="20dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Facebook"
-            app:layout_constraintStart_toStartOf="@id/facebookLogin"
-            app:layout_constraintTop_toTopOf="@id/facebookLogin"
-            app:layout_constraintBottom_toBottomOf="@id/facebookLogin"
-            app:layout_constraintEnd_toEndOf="@id/facebookLogin"/>
-
-
-        <ImageView
-            android:id="@+id/googleLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="13dp"
-            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
-            app:layout_constraintTop_toBottomOf="@id/btn_login"
-            android:src="@drawable/google_login"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Google"
-            app:layout_constraintStart_toStartOf="@id/googleLogin"
-            app:layout_constraintTop_toTopOf="@id/googleLogin"
-            app:layout_constraintBottom_toBottomOf="@id/googleLogin"
-            app:layout_constraintEnd_toEndOf="@id/googleLogin"/>
+            android:text="Next"
+            app:layout_constraintStart_toStartOf="@id/textIcon"
+            app:layout_constraintEnd_toEndOf="@id/textIcon"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/textIcon"
+            app:layout_constraintTop_toTopOf="@id/textIcon"
+            />
 
 
 
